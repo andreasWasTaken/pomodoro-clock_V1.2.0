@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-clr: #0b8a85;
+    --font-clr: #FFF;
+    --border-clr-regular: #054a38;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 16px;
+    color: var(--font-clr);
+    background: var(--bg-clr);
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    place-content: center;
+}
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h1, h2 {
+    margin: 0;
+}
+
+.fas {
+    font-size: 2em;
+    transition: 150ms;
+}
+.fas:hover,
+.fas:focus {
+    transform: scale(1.15);
+}
+
+/* Clock Container */
+.clock-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+/* Time Settings */
+.time-setting-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.break-UI-container {
+    padding: 1.5em 3em;
+}
+.break-setting {
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+}
+#break-display,
+#session-display {
+    display: inline-block;
+    width: 50px;
+    margin: 0;
+}
+.session-UI-container {
+    order: 1;
+    padding: 1.5em 3em;
+}
+.session-setting {
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+/* Time Display */
+.time-display-container {
+    border: 4px solid var(--border-clr-regular);
+    border-radius: 2em;
+    align-self: center;
+    padding: 1.5em;
+    margin: 0;
+    text-align: center;
+    width: 300px;
+}
+#timeDisplay {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Clock Controls */
+.clock-controls {
+    align-self: center;
+    padding-top: 1.5em;
+}
+
+.fa-pause {
+    margin: 0 .3em;
+}

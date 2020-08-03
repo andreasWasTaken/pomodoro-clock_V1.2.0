@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron&display=swap" 
+          rel="stylesheet">  
+    <!-- External Packages -->
+    <link rel="stylesheet" 
+          href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+    
+    <div class="clock-container">
+        <!-- Title -->
+        <h1 class="title">Pomodoro Clock</h1>
+
+        <div class="time-setting-container">
+
+            <!-- Time Settings -->
+            <div class="break-UI-container">
+                <h2>Break</h2>
+                <div class="break-setting">
+                    <i id="breakArrowUp" class="fas fa-arrow-up"></i>
+                    <h2 id="break-display">5</h2>
+                    <i id="breakArrowDown" class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="session-UI-container">
+                <h2>Session</h2>
+                <div class="session-setting">
+                    <i id="sessionArrowUp" class="fas fa-arrow-up"></i>
+                    <h2 id="session-display">25</h2>
+                    <i id="sessionArrowDown" class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        
+            <!-- Time Display -->
+            <div class="time-display-container">
+                <h2 id="clockStatus">Session</h2>
+                <h1 id="timeDisplay">25:00</h1>
+            </div>
+        </div>
+
+        <!-- Clock Controls -->
+        <div class="clock-controls">
+            <i id="btnPlay" class="fas fa-play"></i>
+            <i id="btnPause" class="fas fa-pause"></i>
+            <i id="btnUndo" class="fas fa-undo"></i>
+        </div>
+    </div>
+
+    <audio id="alarmSound" src="./sounds/aralm_sound.mp3"></audio>
+
+    <script src="./index.js"></script>
+</body>
+</html>
